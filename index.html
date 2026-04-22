@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/caddie_gentlemen_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stache Caddie | Low-Latency GSPro Remote</title>
+    
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-DSYAMN0D.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D9cl8k0B.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="/caddie_gentlemen_logo.png" alt="Stache Caddie Logo" class="logo-img" />
+        <span class="logo-text">Stache Caddie</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-to">How To</a>
+        <a href="https://github.com/btardell/stachecaddie" target="_blank" class="nav-btn">GitHub</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero glass-panel">
+        <div class="hero-content">
+          <h1 class="hero-title">Perfect Your Aim.<br><span class="gradient-text">Zero Latency.</span></h1>
+          <p class="hero-subtitle">A zero-configuration remote control application for the GSPro Golf Simulator. Take a mulligan, adjust your aim, and use the flyby camera natively from your phone.</p>
+          
+          <div class="cta-container">
+            <a href="#" id="download-btn" class="primary-btn">
+              <span class="btn-text">Download for Windows</span>
+              <span class="btn-subtext" id="release-version">Loading latest version...</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-graphics">
+           <!-- Subtle ambient glow background -->
+           <div class="glow-orb primary-glow"></div>
+           <div class="glow-orb secondary-glow"></div>
+           <img src="/mobile_app_screenshot.png" alt="Stache Caddie App Preview" class="hero-mockup slide-up" />
+        </div>
+      </section>
+
+      <!-- Features Grid -->
+      <section id="features" class="features">
+        <h2 class="section-title">Why Stache Caddie?</h2>
+        <div class="feature-grid">
+          <div class="feature-card glass-panel">
+            <div class="feature-icon">⚡</div>
+            <h3>Zero-Latency WebSocket</h3>
+            <p>Our trackpad caches swipe deltas rapidly and blasts them across an unthrottled TCP tunnel at 60Hz. Experience perfect 1:1 aiming.</p>
+          </div>
+          <div class="feature-card glass-panel">
+            <div class="feature-icon">🔍</div>
+            <h3>UDP Auto-Discovery</h3>
+            <p>The mobile app will instantly ping your local Wi-Fi subnet to find the Windows Host. Zero manual IP addresses required.</p>
+          </div>
+          <div class="feature-card glass-panel">
+            <div class="feature-icon">🛡️</div>
+            <h3>Elevated Privileges</h3>
+            <p>The host app automatically runs as Administrator, ensuring powerful engines like GSPro never block your synthetic mouse clicks.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How-to / Screenshots Section -->
+      <section id="how-to" class="how-to glass-panel">
+        <h2 class="section-title">Seamless Experience, Anywhere</h2>
+        <p class="section-subtitle">Whether you're holding a phone in your pocket or have an iPad mounted next to your hitting bay, the UI scales dynamically.</p>
+        
+        <div class="mockup-showcase">
+          <div class="mockup-wrapper">
+            <img src="/tablet_app_screenshot.png" alt="iPad Landscape View" class="tablet-mockup shadow-pop" />
+            <div class="mockup-caption">
+              <h3>Tablet View (Landscape)</h3>
+              <p>Easily access administrative settings and configurations directly from the side panel.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Stache Caddie. Built for GSPro.</p>
+      <div class="footer-links">
+        <a href="https://github.com/btardell/stachecaddie" target="_blank">Repository</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
