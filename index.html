@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/caddie_gentlemen_logo.png" />
+    <link rel="icon" type="image/png" href="/stachecaddie-web/caddie_gentlemen_logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stache Caddie | Low-Latency GSPro Remote</title>
     
@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-DSYAMN0D.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D9cl8k0B.css">
+    <script type="module" crossorigin src="/stachecaddie-web/assets/index-C1hFBm_y.js"></script>
+    <link rel="stylesheet" crossorigin href="/stachecaddie-web/assets/index-Ba2oXu98.css">
   </head>
   <body>
     <nav class="navbar">
       <div class="logo-container">
-        <img src="/caddie_gentlemen_logo.png" alt="Stache Caddie Logo" class="logo-img" />
-        <span class="logo-text">Stache Caddie</span>
+        <div class="logo-svg"></div>
+        <span class="logo-text">Stache Caddie<span class="logo-dot"></span></span>
       </div>
       <div class="nav-links">
         <a href="#features">Features</a>
@@ -34,17 +34,41 @@
           <p class="hero-subtitle">A zero-configuration remote control application for the GSPro Golf Simulator. Take a mulligan, adjust your aim, and use the flyby camera natively from your phone.</p>
           
           <div class="cta-container">
+            <h4 class="cta-label">Host Application</h4>
             <a href="#" id="download-btn" class="primary-btn">
               <span class="btn-text">Download for Windows</span>
               <span class="btn-subtext" id="release-version">Loading latest version...</span>
             </a>
+            
+            <h4 class="cta-label mt-24">Mobile Clients</h4>
+            <div class="mobile-downloads">
+              <a href="#" id="download-ios" class="secondary-btn">
+                <span class="btn-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.3 48.6-.7 90.4-82.5 102.7-119.3-65.2-30.7-61.7-90-62-91.3zM85.3 7l1.5 2.8q-4.8 6.1-9.5 10.8C59.3 39.8 45.4 69 48 97.4c29.1 1.8 59.8-19.1 76.4-44.1 12.8-19.2 21.8-49.8 17.4-75.1C111.4 0 85.3 7 85.3 7z"/></svg>
+                </span>
+                <span class="btn-text">App Store</span>
+              </a>
+              <a href="#" id="download-android" class="secondary-btn">
+                <span class="btn-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                </span>
+                <span class="btn-text">Google Play</span>
+              </a>
+            </div>
+            <p class="test-store-note">Note: Mobile clients are currently restricted to test stores and are accessible by request only.</p>
           </div>
         </div>
         <div class="hero-graphics">
            <!-- Subtle ambient glow background -->
            <div class="glow-orb primary-glow"></div>
            <div class="glow-orb secondary-glow"></div>
-           <img src="/mobile_app_screenshot.png" alt="Stache Caddie App Preview" class="hero-mockup slide-up" />
+           
+           <div class="iphone-frame hero-mockup">
+             <div class="iphone-notch"></div>
+             <div class="iphone-screen">
+               <img src="/stachecaddie-web/assets/mobile-portrait-l8TkgaDy.png" alt="Stache Caddie App Preview" />
+             </div>
+           </div>
         </div>
       </section>
 
@@ -53,19 +77,25 @@
         <h2 class="section-title">Why Stache Caddie?</h2>
         <div class="feature-grid">
           <div class="feature-card glass-panel">
-            <div class="feature-icon">⚡</div>
-            <h3>Zero-Latency WebSocket</h3>
-            <p>Our trackpad caches swipe deltas rapidly and blasts them across an unthrottled TCP tunnel at 60Hz. Experience perfect 1:1 aiming.</p>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            </div>
+            <h3>Never Leave the Bay</h3>
+            <p>Stop walking back to your PC. Stache Caddie puts the GSPro interface right in your pocket. Effortlessly adjust your aim or take a mulligan without breaking your rhythm.</p>
           </div>
           <div class="feature-card glass-panel">
-            <div class="feature-icon">🔍</div>
-            <h3>UDP Auto-Discovery</h3>
-            <p>The mobile app will instantly ping your local Wi-Fi subnet to find the Windows Host. Zero manual IP addresses required.</p>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+            </div>
+            <h3>Pinpoint Accuracy</h3>
+            <p>Experience flawless, real-time control. Our ultra-smooth trackpad ensures that every swipe of your thumb translates perfectly on the impact screen.</p>
           </div>
           <div class="feature-card glass-panel">
-            <div class="feature-icon">🛡️</div>
-            <h3>Elevated Privileges</h3>
-            <p>The host app automatically runs as Administrator, ensuring powerful engines like GSPro never block your synthetic mouse clicks.</p>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+            </div>
+            <h3>Strategic Course Views</h3>
+            <p>Take control of your strategy before you swing. Effortlessly trigger tactical drone flyovers to scout hidden bunkers right from the tee box.</p>
           </div>
         </div>
       </section>
@@ -77,10 +107,40 @@
         
         <div class="mockup-showcase">
           <div class="mockup-wrapper">
-            <img src="/tablet_app_screenshot.png" alt="iPad Landscape View" class="tablet-mockup shadow-pop" />
-            <div class="mockup-caption">
-              <h3>Tablet View (Landscape)</h3>
-              <p>Easily access administrative settings and configurations directly from the side panel.</p>
+            <div class="ipad-frame">
+              <div class="ipad-camera"></div>
+              <div class="ipad-screen">
+                <img src="/stachecaddie-web/assets/ipad-landscape-YU-fQRrm.png" alt="iPad Admin View" />
+                
+                <!-- Interactive Hotspots -->
+                <div class="hotspot" style="top: 18%; left: 63%;">
+                  <div class="hotspot-pulse"></div>
+                  <div class="hotspot-tooltip tooltip-left">
+                    <h4>Team Ball Selection</h4>
+                    <p>Enable the multiplayer roster (P1-P4) directly above your trackpad on the PLAY screen to quickly switch scramble balls without returning to the PC.</p>
+                  </div>
+                </div>
+                
+                <div class="hotspot" style="top: 48%; left: 86%;">
+                  <div class="hotspot-pulse"></div>
+                  <div class="hotspot-tooltip tooltip-left">
+                    <h4>Precision Trackpad</h4>
+                    <p>Use the trackpad for full screen navigation. Tap the gear icon to fine-tune pointer speed and scroll sensitivity.</p>
+                  </div>
+                </div>
+                
+                <div class="hotspot" style="top: 45%; left: 4%;">
+                  <div class="hotspot-pulse"></div>
+                  <div class="hotspot-tooltip tooltip-right">
+                    <h4>Deep Customization</h4>
+                    <p>Unlock the Admin suite to enforce strict Tournament rules, configure commercial Venue routing, adjust Audio/Visual lighting, and instantly switch dynamic Game Themes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mockup-caption mt-24">
+              <h3>Under the Hood</h3>
+              <p>Deep configuration, dynamic theming, and administrative controls seamlessly built-in.</p>
             </div>
           </div>
         </div>
